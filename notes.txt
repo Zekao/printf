@@ -1,1 +1,3 @@
 ft_putnbr -> printf("%d")
+ft_putchar -> printf("%c")
+ft_
