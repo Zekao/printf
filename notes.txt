@@ -1,3 +1,4 @@
-ft_putnbr -> printf("%d")
-ft_putchar -> printf("%c")
-ft_
+ft_putnbr -> printf("%d") OK
+ft_putchar -> printf("%c") OK
+ft_putstr -> printf("%s") OK
+ft_putpoint -> printf("%p")
