@@ -15,10 +15,10 @@
 void    ft_putnbr(int nbr)
 {
     long long int nb;
-    
+
     nb = (long long int)nbr;
     if (nb < 0)
-    {
+       {
         ft_putchar('-');
         nb = nb * -1;
     }
