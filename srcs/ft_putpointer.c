@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_putpointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/08/28 17:57:18 by emaugale         ###   ########.fr       */
+/*   Created: 2021/08/31 19:42:46 by emaugale          #+#    #+#             */
+/*   Updated: 2021/08/31 19:42:46 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-// int	ft_printf(const char *str, ...)
-// {
-// 	return (0);
-// }
-
-int	main(int argc, char **argv)
+void	ft_putpointer(const void *str)
 {
-	printf("%p\n", argv[1]);
+	int	i;
+	char	*convertstr;
+
+	convertstr = (char*)str;
+
+	i = 0;
+	while (convertstr[i])
+	{
+		
+	}
 }

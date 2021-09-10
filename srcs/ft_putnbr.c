@@ -28,7 +28,7 @@ void	ft_putnbr(int nbr)
 	}
 	if (nb > 9)
 	{
-		ft_putnbr(nb / 10);
+		ft_putnbr(nb/ 10);
 		ft_putnbr(nb % 10);
 	}
 }

@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_hexa.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/08/28 17:57:18 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/10 19:10:04 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-// int	ft_printf(const char *str, ...)
-// {
-// 	return (0);
-// }
-
-int	main(int argc, char **argv)
+void	ft_putnbr_hexa(int nbr)
 {
-	printf("%p\n", argv[1]);
+	char	*hexa;
+	char	*newstr;
+	int			i;
+
+	hexa = "0123456789ABCDEF";
+	i = 0;
 }
