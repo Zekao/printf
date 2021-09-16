@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_hexa.c                                   :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 02:45:16 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/16 20:08:43 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putnbr_hexa(int nbr)
+int	ft_print_x(int nbr)
 {
 	char	*hexa;
 	char	*newstr;

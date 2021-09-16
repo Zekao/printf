@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 18:36:02 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 18:37:37 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/16 19:32:46 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdio.h>
 # include <stdarg.h>
 # include "libft.a"
-void	ft_putchar(char c);
-void	ft_putnbr(int nbr);
-void	ft_putstr(const char *str);
+
+int	ft_print_c(char c);
+int	ft_print_s(const char *s);
 #endif
