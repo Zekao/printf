@@ -6,18 +6,53 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/08/28 17:57:18 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/16 02:46:33 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-// int	ft_printf(const char *str, ...)
-// {
-// 	return (0);
-// }
-
-int	main(int argc, char **argv)
+int	ft_printf(const char *str, ...)
 {
-	printf("%p\n", argv[1]);
+	va_list 	args;
+	int			i;
+	int			res;
+
+	i = 0;
+	res = 0;
+	va_start(args, str);
+	while (str[i])
+	{
+		if (str[i] == '%')
+			res = res + ft_parse(str[i++], arg);
+		else
+			write(1, &str[i], 1);
+		i++;
+	}
+	return (res);
 }
+
+int		ft_parse(char flag, va_list args)
+{
+	int	res;
+
+	res = 0;
+		if (flag == 'c')
+			res = ft_putchar(args);
+		if (flag == 's')
+			res = ft_putstr(args);
+		if (flag == 'p')
+			res = ft_putpointer(args);
+		if (flag == 'd')
+			res = ft_putnbr(args);
+		if (flag == 'i')
+			res = ft_putnbr_unsigned(args);
+		if (flag == 'u')
+			res = ft_put
+		if (flag == 'x')
+			res = 
+		if (flag == 'X')
+			res = 
+		if (flag == '%')
+			res = 
+}		return (res);

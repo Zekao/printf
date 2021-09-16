@@ -1,7 +1,0 @@
-ft_putnbr -> printf("%d") OK
-ft_putnbr_unsigned -> printf("%u) OK
-ft_putchar -> printf("%c") OK
-ft_putstr -> printf("%s") OK
-ft_putpointer -> printf("%p") A FAIRE
-ft_putnbr_hexa -> printf("%x") A FAIRE
-ft_putpercent -> printf("%%") A FAIRE
