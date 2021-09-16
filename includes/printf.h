@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 18:36:02 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 19:32:46 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/16 20:32:07 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,6 @@
 
 int	ft_print_c(char c);
 int	ft_print_s(const char *s);
+int	ft_print_d(int nbr);
+int	ft_print_x(int nbr);
 #endif
