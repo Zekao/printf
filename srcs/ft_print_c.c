@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_print_c.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/29 19:24:47 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 02:44:58 by emaugale         ###   ########.fr       */
+/*   Created: 2021/08/28 17:59:17 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/16 18:53:18 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putnbr(int nbr)
+int	ft_print_c(char c)
 {
-	long long int	nb;
-
-	nb = (long long int)nbr;
-	if (nb < 0)
+	if (c)
 	{
-		ft_putchar('-');
-		nb = nb * -1;
+		write(1, &c, 1);
+		return (1);
 	}
-	if (nb >= 0 && nb <= 9)
-	{
-		ft_putchar(nb + 48);
-	}
-	if (nb > 9)
-	{
-		ft_putnbr(nb/ 10);
-		ft_putnbr(nb % 10);
-	}
+	return (0);
 }

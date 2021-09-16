@@ -12,10 +12,10 @@
 
 NAME = libftprintf.a
 
-SRCS =	srcs/ft_putnbr.c			\
-		srcs/ft_putstr.c			\
-		srcs/ft_putchar.c			\
-		srcs/ft_putpointer.c		\
+SRCS =	srcs/ft_print_c.c			\
+		srcs/ft_print_d.c			\
+		srcs/ft_print_i.c			\
+		srcs/ft_print_s.c			\
 		srcs/ft_putnbr_unsigned.c	\
 		srcs/ft_putnbr_hexa.c		\
 		srcs/ft_printf.c			\

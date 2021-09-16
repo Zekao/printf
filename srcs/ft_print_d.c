@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_unsigned.c                               :+:      :+:    :+:   */
+/*   ft_print_d.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 19:04:51 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 02:45:03 by emaugale         ###   ########.fr       */
+/*   Created: 2021/08/29 19:24:47 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/16 18:54:00 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putnbr_unsigned(unsigned int nbr)
+int	ft_print_d(int nbr)
 {
+	long long int	nb;
 
-	if (nbr <= 9)
+	nb = (long long int)nbr;
+	if (nb < 0)
 	{
-		ft_putchar(nbr + 48);
+		ft_putchar('-');
+		nb = nb * -1;
 	}
-	if (nbr > 9)
+	if (nb >= 0 && nb <= 9)
 	{
-		ft_putnbr_unsigned(nbr / 10);
-		ft_putnbr_unsigned(nbr % 10);
+		ft_putchar(nb + 48);
 	}
+	if (nb > 9)
+	{
+		ft_print_d(nb / 10);
+		ft_print_d(nb % 10);
+	}
+	return (ft_strlen((char *)(nbr)));
 }

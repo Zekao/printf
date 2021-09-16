@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 02:46:33 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/16 18:43:45 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,15 @@ int		ft_parse(char flag, va_list args)
 
 	res = 0;
 		if (flag == 'c')
-			res = ft_putchar(args);
+			res = ft_print_c(args);
 		if (flag == 's')
-			res = ft_putstr(args);
+			res = ft_print_s(args);
 		if (flag == 'p')
 			res = ft_putpointer(args);
 		if (flag == 'd')
-			res = ft_putnbr(args);
+			res = ft_print_d(args);
 		if (flag == 'i')
-			res = ft_putnbr_unsigned(args);
+			res = ft_print_i(args);
 		if (flag == 'u')
 			res = ft_put
 		if (flag == 'x')
