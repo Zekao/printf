@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:22:28 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/17 23:49:41 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_printf(const char *str, ...)
 	while (str[i])
 	{
 		if (str[i] == '%')
-			res = res + ft_parse(str[i++], arg);
+			res = res + ft_parse(str[i++], args);
 		else
 			write(1, &str[i], 1);
 		i++;
@@ -42,8 +42,8 @@ int	ft_parse(char flag, va_list args)
 	if (flag == 's')
 		res = ft_print_s(args);
 	if (flag == 'p')
-		res = ft_putpointer(args);
-	if (flag == 'd')
+		res = ft_print_p(args);
+	if (flag == 'd' || flag == 'i')
 		res = ft_print_d(args);
 	if (flag == 'i')
 		res = ft_print_i(args);
@@ -54,7 +54,7 @@ int	ft_parse(char flag, va_list args)
 	if (flag == 'X')
 		res = ft_print_upper_x(args);
 	if (flag == '%')
-		res = ft_print_percent(args);
+		res = ft_print_percent();
 	va_end(args);
 	return (res);
 }

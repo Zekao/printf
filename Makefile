@@ -6,24 +6,29 @@
 #    By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/30 11:36:49 by emaugale          #+#    #+#              #
-#    Updated: 2021/09/17 20:29:28 by emaugale         ###   ########.fr        #
+#    Updated: 2021/09/17 23:37:13 by emaugale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS =	srcs/ft_print_c.c			\
-		srcs/ft_print_d.c			\
-		srcs/ft_print_i.c			\
-		srcs/ft_print_s.c			\
-		srcs/ft_print_x.c			\
-		srcs/ft_print_upper_x.c		\
-		srcs/ft_printf.c			\
-		srcs/ft_get_size_num.c		\
-		srcs/ft_get_size_num_u.c	\
-		srcs/ft_print_percent.c		\
-		srcs/
-	
+SRCS =	srcs/ft_printf.c				\
+		srcs/ft_print_c.c				\
+		srcs/ft_print_d.c				\
+		srcs/ft_print_i.c				\
+		srcs/ft_print_p.c				\
+		srcs/ft_print_percent.c			\
+		srcs/ft_print_s.c				\
+		srcs/ft_print_u.c				\
+		srcs/ft_print_x.c				\
+		srcs/ft_print_upper_x.c			\
+		srcs/ft_putchar.c				\
+		srcs/ft_putnbr_base.c			\
+		srcs/ft_putnbr_base_unsigned.c	\
+		srcs/ft_strlen.c				\
+		srcs/ft_get_size_num.c			\
+		srcs/ft_get_size_num_u.c		\
+
 		
 		
 		

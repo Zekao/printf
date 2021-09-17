@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_p.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_base_unsigned.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 19:42:46 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 23:31:56 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 18:47:49 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 23:30:24 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include <unistd.h>
 
-int	ft_print_p(va_list args)
+void	ft_putnbr_base_unsigned(unsigned int nbr, const char *base)
 {
-	int	nbr;
+	unsigned int		a;
+	unsigned int		new_nbr;
 
-	nbr = va_arg(args, int);
-	ft_putstr("0x");
-	ft_putnbr_base_unsigned(nbr, "0123456789abcdef");
+	a = ft_strlen(base);
+	if (a == 0 || a == 1)
+		return ;
+	if (nbr < 0)
+	{
+		ft_putchar('-');
+		new_nbr = (unsigned int)(nbr * -1);
+	}
+	else
+		new_nbr = (unsigned int) nbr;
+	if (new_nbr >= a)
+		ft_putnbr_base_unsigned(new_nbr / a, base);
+	ft_putchar(base[new_nbr % a]);
 }

@@ -6,13 +6,13 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 19:04:51 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:06:41 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/17 23:45:09 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_print_i(int nbr)
+int	ft_print_i(va_list args)
 {
 	int				nbr;
 	long long int	nb;

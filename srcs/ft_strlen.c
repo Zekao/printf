@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_p.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 19:42:46 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 23:31:56 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 23:30:49 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 23:30:49 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_print_p(va_list args)
+int	ft_strlen(const char *str)
 {
-	int	nbr;
+	int	i;
 
-	nbr = va_arg(args, int);
-	ft_putstr("0x");
-	ft_putnbr_base_unsigned(nbr, "0123456789abcdef");
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

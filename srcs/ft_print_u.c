@@ -6,12 +6,15 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 19:07:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:07:13 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/17 23:51:47 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_print_u(unsigned int nbr)
+int	ft_print_u(va_list args)
 {
+	unsigned int	nbr;
+
+	nbr = va_arg(args, unsigned int);
 	if (nbr <= 9)
 	{
 		ft_putchar(nbr + 48);
