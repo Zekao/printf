@@ -6,11 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 18:47:49 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 23:30:32 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/18 00:22:18 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "printf.h"
 
 void	ft_putnbr_base(int nbr, const char *base)
 {

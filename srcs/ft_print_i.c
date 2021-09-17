@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 19:04:51 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 23:45:09 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/18 00:16:51 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,13 @@
 int	ft_print_i(va_list args)
 {
 	int				nbr;
-	long long int	nb;
 
 	nbr = va_arg(args, int);
-	nb = (long long int)nbr;
+	return (ft_print_i_after_cast(nbr));
+}
+
+int	ft_print_i_after_cast(int nb)
+{
 	if (nb < 0)
 	{
 		ft_putchar('-');
@@ -30,8 +33,8 @@ int	ft_print_i(va_list args)
 	}
 	if (nb > 9)
 	{
-		ft_print_i(nb / 10);
-		ft_print_i(nb % 10);
+		ft_print_i_after_cast(nb / 10);
+		ft_print_i_after_cast(nb % 10);
 	}
-	return (ft_get_size_num(nbr));
+	return (ft_get_size_num(nb));
 }

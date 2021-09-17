@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_base_unsigned.c                          :+:      :+:    :+:   */
+/*   test2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/17 18:47:49 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/18 00:23:28 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/18 00:25:17 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/18 00:25:17 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-void	ft_putnbr_base_unsigned(unsigned int nbr, const char *base)
+int	main()
 {
-	unsigned int		a;
-	unsigned int		new_nbr;
+	char c;
 
-	a = ft_strlen(base);
-	new_nbr = (unsigned int) nbr;
-	if (new_nbr >= a)
-		ft_putnbr_base_unsigned(new_nbr / a, base);
-	ft_putchar(base[new_nbr % a]);
+	c = 'e';
+	ft_printf("%c, c");
+
 }
