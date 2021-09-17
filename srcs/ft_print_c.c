@@ -6,18 +6,17 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:59:17 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 20:08:54 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/17 20:09:18 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_print_c(char c)
+int	ft_print_c(va_list args)
 {
-	if (c)
-	{
-		write(1, &c, 1);
-		return (1);
-	}
-	return (0);
+	char	c;
+
+	c = (char)va_arg(args, int);
+	ft_putchar(c);
+	return (1);
 }

@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:19:22 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 17:54:19 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 20:04:31 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_print_x(va_list args)
+void	ft_putchar(char c)
 {
-	size_t	nbr;
-
-	nbr = va_arg(args, size_t);
-	ft_putnbr_base(nbr, "0123456789abcdef");
-	return (1);
+	write(1, &c, 1);
 }

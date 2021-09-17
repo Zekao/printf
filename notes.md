@@ -8,13 +8,13 @@
 	- ft_print_d.c
  - %i imprime un entier en base 10. ✔️
 	- ft_print_i.c
- - %u imprime un nombre décimal non signé (base 10). ❌
+ - %u imprime un nombre décimal non signé (base 10). ✔️
 	- ft_print_u.c
- - %x imprime un nombre en hexadécimal (base 16 et abcdef minuscule). ❌
+ - %x imprime un nombre en hexadécimal (base 16 et abcdef minuscule). ✔️
 	- ft_print_x.c
- - %X imprime un nombre en hexadécimal (base 16 et ABCDEF majuscule). ❌
+ - %X imprime un nombre en hexadécimal (base 16 et ABCDEF majuscule). ✔️
 	- ft_print_upper_x.c
- - %% imprime un signe de pourcentage.. ❌
+ - %% imprime un signe de pourcentage.. ✔️
 	- ft_print_%.c 
 
  

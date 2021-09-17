@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putpointer.c                                    :+:      :+:    :+:   */
+/*   ft_get_size_num_u.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 19:42:46 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/16 20:08:44 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 17:58:24 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 20:10:13 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-void	ft_putpointer(const void *str)
+int	ft_get_size_num_u(unsigned int nb)
 {
 	int	i;
-	char	*convertstr;
-
-	convertstr = (char*)str;
 
 	i = 0;
-	while (convertstr[i])
+	while (nb)
 	{
-		
+		nb /= 10;
+		i++;
 	}
+	return (i);
 }

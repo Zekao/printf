@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:19:22 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 19:07:24 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 20:07:13 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_print_x(va_list args)
+int	ft_print_u(unsigned int nbr)
 {
-	size_t	nbr;
-
-	nbr = va_arg(args, size_t);
-	ft_putnbr_base(nbr, "0123456789abcdef");
-	return (1);
+	if (nbr <= 9)
+	{
+		ft_putchar(nbr + 48);
+	}	
+	if (nbr > 9)
+	{
+		ft_print_u(nbr / 10);
+		ft_print_u(nbr % 10);
+	}
+	return (ft_get_size_num_u(nbr));
 }

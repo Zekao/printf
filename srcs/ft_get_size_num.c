@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_get_size_num.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:19:22 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/17 17:58:24 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/17 20:10:34 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_print_x(va_list args)
+int	ft_get_size_num(int nb)
 {
-	size_t	nbr;
+	int	i;
 
-	nbr = va_arg(args, size_t);
-	ft_putnbr_base(nbr, "0123456789abcdef");
-	return (1);
+	i = 0;
+	if (nb < 0)
+	{
+		nb = -nb;
+	}
+	while (nb)
+	{
+		nb /= 10;
+		i++;
+	}
+	return (i);
 }
