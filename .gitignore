@@ -1,6 +1,0 @@
-venv
-*.json
-*.a
-*.o
-test
-test/printf.h
