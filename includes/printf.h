@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 18:36:02 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/18 00:20:46 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/18 01:41:23 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_print_p(va_list args);
 int	ft_print_percent(void);
 int	ft_print_s(va_list args);
 int	ft_print_u(va_list args);
-int	ft_print_i_after_cast(int nb);
+int	ft_print_i_after_cast(long int nb);
 int	ft_print_u_after_cast(unsigned int nb);
 int	ft_print_upper_x(va_list args);
 int	ft_print_x(va_list args);

@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 19:04:51 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/18 00:16:51 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/18 01:41:11 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_print_i(va_list args)
 	return (ft_print_i_after_cast(nbr));
 }
 
-int	ft_print_i_after_cast(int nb)
+int	ft_print_i_after_cast(long int nb)
 {
 	if (nb < 0)
 	{

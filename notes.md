@@ -2,7 +2,7 @@
      - ft_printf_c.c
  -  %s imprime une chaîne de caractères.  ✔️
 	- ft_print_s.c
- -  %p L’argument de pointeur void * est imprimé en hexadécimal. ❌
+ -  %p L’argument de pointeur void * est imprimé en hexadécimal. ✔️
 	- ft_print_p.c
  - %d imprime un nombre décimal (base 10). ✔️
 	- ft_print_d.c

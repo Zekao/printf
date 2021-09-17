@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 18:36:02 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/18 00:20:46 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/18 01:31:53 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdarg.h>
-
+# include <limits.h>
 int	ft_printf(const char *str, ...);
 int	ft_get_size_num_u(unsigned int nb);
 int	ft_get_size_num(int nb);

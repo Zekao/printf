@@ -6,7 +6,7 @@
 #    By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/30 11:36:49 by emaugale          #+#    #+#              #
-#    Updated: 2021/09/18 00:17:21 by emaugale         ###   ########.fr        #
+#    Updated: 2021/09/18 00:53:55 by emaugale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS =	srcs/ft_printf.c				\
 		srcs/ft_print_x.c				\
 		srcs/ft_print_upper_x.c			\
 		srcs/ft_putchar.c				\
+		srcs/ft_putstr.c				\
 		srcs/ft_putnbr_base.c			\
 		srcs/ft_putnbr_base_unsigned.c	\
 		srcs/ft_strlen.c				\
