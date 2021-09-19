@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_upper_x.c                                 :+:      :+:    :+:   */
+/*   ft_nbrlen_hexa.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/10 19:10:04 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 15:02:36 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/19 14:57:07 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/19 14:57:07 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_print_upper_x(va_list args)
+int	ft_nbrlen_hexa(int nb)
 {
-	size_t	nbr;
-	size_t	size;
+	int	i;
 
-	nbr = va_arg(args, size_t);
-	ft_putnbr_base(nbr, "0123456789ABCDEF");
-	size = ft_nbrlen_hexa(nbr);
-	return (size);
+	i = 0;
+	if (nb < 0)
+	{
+		nb = -nb;
+	}
+	while (nb)
+	{
+		nb /= 16;
+		i++;
+	}
+	return (i);
 }

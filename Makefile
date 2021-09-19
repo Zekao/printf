@@ -6,7 +6,7 @@
 #    By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/30 11:36:49 by emaugale          #+#    #+#              #
-#    Updated: 2021/09/19 01:37:24 by emaugale         ###   ########.fr        #
+#    Updated: 2021/09/19 15:00:32 by emaugale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS =	srcs/ft_printf.c				\
 		srcs/ft_strlen.c				\
 		srcs/ft_get_size_num.c			\
 		srcs/ft_get_size_num_u.c		\
+		srcs/ft_nbrlen_hexa.c			\
 
 		
 		

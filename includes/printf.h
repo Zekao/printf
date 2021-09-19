@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 18:36:02 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 01:14:11 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/19 14:59:09 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdarg.h>
 
 int		ft_printf(const char *str, ...);
-int		ft_get_size_num_u(unsigned int nb);
+int		ft_get_size_num_u(unsigned long long nb);
 int		ft_get_size_num(int nb);
 int		ft_print_c(va_list args);
 int		ft_print_d(va_list args);
@@ -36,4 +36,5 @@ void	ft_putnbr_base(int nbr, const char *base);
 void	ft_putstr(const char *str);
 int		ft_strlen(const char *str);
 int		ft_parse(char flag, va_list args);
+int		ft_nbrlen_hexa(int nb);
 #endif

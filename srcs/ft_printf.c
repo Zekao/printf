@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 01:08:56 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/19 14:41:21 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ int	ft_printf(const char *str, ...)
 			i++;
 		}
 		else
+		{
 			write(1, &str[i], 1);
+			res++;
+		}
 		i++;
 	}
 	return (res);

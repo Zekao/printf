@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 19:42:46 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 01:02:35 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/19 14:47:51 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int	ft_print_p(va_list args)
 	nbr = va_arg(args, unsigned long long);
 	ft_putstr("0x");
 	ft_putnbr_base_unsigned(nbr, "0123456789abcdef");
-	return (1);
+	return (ft_get_size_num_u(nbr));
 }

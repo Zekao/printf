@@ -6,11 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:58:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:10:13 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/19 14:48:05 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_get_size_num_u(unsigned int nb)
+int	ft_get_size_num_u(unsigned long long nb)
 {
 	int	i;
 
