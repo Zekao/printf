@@ -6,7 +6,7 @@
 #    By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/30 11:36:49 by emaugale          #+#    #+#              #
-#    Updated: 2021/09/19 15:00:32 by emaugale         ###   ########.fr        #
+#    Updated: 2021/09/20 18:11:53 by emaugale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,12 +45,47 @@ INC_DIR = includes
 CFLAGS =  -Wall -Wextra -Werror
 
 .c.o:
-	${CC} ${CFLAGS} -c -I ${INC_DIR} $< -o ${<:.c=.o}
+	@${CC} ${CFLAGS} -c -I ${INC_DIR} $< -o ${<:.c=.o}
 
 all: $(NAME)
-
+	clear
+	@echo "\033[0;31m\n                   "
+	@echo "                  ⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀"
+	@echo "              ⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀   "
+	@echo "              ⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠈⢻⣿⣿⡄⠀⠀⠀"
+	@echo "             ⣸⣿⡏⠀⠀⠀⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄⠀"
+	@echo "             ⣿⣿⠁⠀⠀⢰⣿⣿⣯⠁⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣷⡄⠀"
+	@echo "       ⣀⣤⣴⣶⣶⣿⡟⠀⠀⠀⢸⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⠀"
+	@echo "⠀     ⣿⡟⠋⠉⣹⣿⡇⠀⠀⠀⠘⣿⣿⣿⣿⣷⣦⣤⣤⣤⣶⣶⣶⣶⣿⣿⣿⠀ \033[0;32m When the makefile is sus \033[0;31m"
+	@echo "⠀    ⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃"⠀
+	@echo "     ⣸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣿⣿⡿⠿⠿⠛⢻⣿⡇⠀⠀"
+	@echo "     ⣿⣿⠁⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣧⠀"
+	@echo "     ⣿⣿⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀" 
+	@echo "     ⣿⣿⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀      \033[1;33m emaugale's ft_printf\033[0;31m"
+	@echo "     ⢿⣿⡆⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇"
+	@echo "     ⠸⣿⣧⡀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃"
+	@echo "      ⠛⢿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⣰⣿⣿⣷⣶⣶⣶⣶⠶⠀⢠⣿⣿"
+	@echo "           ⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⣽⣿⡏⠁⠀⠀⢸⣿⡇⠀"
+	@echo "           ⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⢹⣿⡆⠀⠀⠀⣸⣿⠇"
+	@echo "           ⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁⠀⠈⠻⣿⣿⣿⣿⡿⠏"
+	@echo "           ⠈⠛⠻⠿⠿⠿⠿⠋⠁"
+	@echo "\033[0;34m                     \033[1;36m 100/100 or consequences\033[0;32m"
+	@sleep 1
+	@echo "\033[0;35m La compilation se lance dans 5secondes "
+	@sleep 1
+	@echo "\033[0;34m La compilation se lance dans 4secondes "
+	@sleep 1
+	@echo "\033[0;33m La compilation se lance dans 3secondes "
+	@sleep 1
+	@echo "\033[0;32m La compilation se lance dans 2secondes "
+	@sleep 1
+	@echo "\033[0;31m La compilation se lance dans 1seconde  \033[1;34m"
+	@sleep 1
+	@echo "Bonne correction !\n"
+	@sleep 1
+	
 $(NAME): ${OBJS}
-	ar rc $(NAME) ${OBJS}
+	@ar rc $(NAME) ${OBJS}
 
 clean: 
 	${RM} ${OBJS}
@@ -61,4 +96,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re libftprintf.a
+.PHONY: all clean fclean re libftprintf.a test
