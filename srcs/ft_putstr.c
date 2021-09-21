@@ -6,18 +6,18 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 00:55:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 01:09:21 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 00:30:04 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 void	ft_putstr(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] && *str)
 	{
 		write(1, &str[i], 1);
 		i++;

@@ -6,18 +6,22 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:58:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 15:10:33 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 13:24:44 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_get_size_num_u(unsigned long long nb)
+#include "ft_printf.h"
+
+int	ft_get_size_num_u(unsigned long long int nb, int base)
 {
 	int	i;
 
 	i = 0;
+	if (nb == 0)
+		return (1);
 	while (nb)
 	{
-		nb /= 10;
+		nb /= base;
 		i++;
 	}
 	return (i);

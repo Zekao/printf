@@ -6,11 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 14:41:21 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 00:26:34 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *str, ...)
 {
@@ -50,7 +50,7 @@ int	ft_parse(char flag, va_list args)
 	if (flag == 'p')
 		res = ft_print_p(args);
 	if (flag == 'd' || flag == 'i')
-		res = ft_print_i(args);
+		res = ft_print_d(args);
 	if (flag == 'u')
 		res = ft_print_u(args);
 	if (flag == 'x')

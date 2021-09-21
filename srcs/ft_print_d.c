@@ -10,28 +10,36 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	ft_print_d(va_list args)
+void	ft_putnbr(int nb)
 {
-	int				nbr;
-	long long int	nb;
-
-	nbr = va_arg(args, int);
-	nb = (long long int)nbr;
+	if (nb == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
 	if (nb < 0)
 	{
 		ft_putchar('-');
 		nb = nb * -1;
 	}
-	if (nb >= 0 && nb <= 9)
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	if (nb <= 9)
 	{
 		ft_putchar(nb + 48);
 	}
-	if (nb > 9)
-	{
-		ft_print_d(nb / 10);
-		ft_print_d(nb % 10);
-	}
+}
+
+int	ft_print_d(va_list args)
+{
+	int	nbr;
+
+	nbr = va_arg(args, int);
+	ft_putnbr(nbr);
 	return (ft_get_size_num(nbr));
 }

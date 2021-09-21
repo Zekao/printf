@@ -6,11 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:59:17 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/17 20:04:01 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 00:26:19 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_percent(void)
 {

@@ -14,7 +14,7 @@ NAME = libftprintf.a
 
 SRCS =	srcs/ft_printf.c				\
 		srcs/ft_print_c.c				\
-		srcs/ft_print_i.c				\
+		srcs/ft_print_d.c				\
 		srcs/ft_print_p.c				\
 		srcs/ft_print_percent.c			\
 		srcs/ft_print_s.c				\
@@ -29,6 +29,7 @@ SRCS =	srcs/ft_printf.c				\
 		srcs/ft_get_size_num.c			\
 		srcs/ft_get_size_num_u.c		\
 		srcs/ft_nbrlen_hexa.c			\
+		srcs/ft_get_base_len.c			\
 
 		
 		
@@ -71,29 +72,26 @@ all: $(NAME)
 	@echo "           ⠈⠛⠻⠿⠿⠿⠿⠋⠁"
 	@echo "\033[0;34m                     \033[1;36m 100/100 or consequences\033[0;32m"
 	@sleep 1
-	@echo "\033[0;35m La compilation se lance dans 5secondes "
-	@sleep 1
-	@echo "\033[0;34m La compilation se lance dans 4secondes "
-	@sleep 1
-	@echo "\033[0;33m La compilation se lance dans 3secondes "
-	@sleep 1
-	@echo "\033[0;32m La compilation se lance dans 2secondes "
-	@sleep 1
-	@echo "\033[0;31m La compilation se lance dans 1seconde  \033[1;34m"
-	@sleep 1
-	@echo "Bonne correction !\n"
-	@sleep 1
+	@echo "\033[1;34m Bonne correction !\n"
+	@sleep 2
 	
 $(NAME): ${OBJS}
 	@ar rc $(NAME) ${OBJS}
 
 clean: 
-	${RM} ${OBJS}
-	@echo "Objects have been deleted"
+	@${RM} ${OBJS} ${BONUSOBJS}
+	@echo "\033[1;31m ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣶⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+	@echo "⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣄⣀⡀⣠⣾⡇⠀⠀⠀⠀"
+	@echo "⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀"
+	@echo "⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⡇⠀⠀⠀⠀"
+	@echo "⠀⣶⣿⣦⣜⣿⣿⣿⡟⠻⣿⣿⣿⣿⣿⣿⣿⡿⢿⡏⣴⣺⣦⣙⣿⣷⣄⠀⠀⠀\033[1;34m Goodbye everyone\033[1;31m"
+	@echo "⠀⣯⡇⣻⣿⣿⣿⣿⣷⣾⣿⣬⣥⣭⣽⣿⣿⣧⣼⡇⣯⣇⣹⣿⣿⣿⣿⣧⠀⠀"
+	@echo "⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠸⣿⣿⣿⣿⣿⣿⣿⣷⠀"
+	@echo "\033[1;32m Objects have been deleted"
 fclean: clean
-	${RM} $(NAME)
-	@echo "Libftprintf have been deleted"
+	@${RM} $(NAME) 
+	@echo " ${NAME} have been deleted"
 
 re: fclean all
 
-.PHONY: all clean fclean re libftprintf.a test
+.PHONY: all clean fclean re libftprintf.a 

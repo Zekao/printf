@@ -6,11 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 18:47:49 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/18 00:22:18 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 02:09:06 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 void	ft_putnbr_base(int nbr, const char *base)
 {
@@ -28,6 +28,6 @@ void	ft_putnbr_base(int nbr, const char *base)
 	else
 		new_nbr = (unsigned int) nbr;
 	if (new_nbr >= a)
-		ft_putnbr_base_unsigned(new_nbr / a, base);
+		ft_putnbr_base(new_nbr / a, base);
 	ft_putchar(base[new_nbr % a]);
 }

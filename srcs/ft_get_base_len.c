@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_u.c                                       :+:      :+:    :+:   */
+/*   ft_get_base_len.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/17 19:07:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/21 12:58:59 by emaugale         ###   ########.fr       */
+/*   Created: 2021/09/21 12:43:53 by emaugale          #+#    #+#             */
+/*   Updated: 2021/09/21 12:43:53 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_u(va_list args)
+int		ft_get_base_len(size_t nbr, char *base)
 {
-	unsigned int	nbr;
+	int	size;
+	size_t	baselen;
 
-	nbr = va_arg(args, unsigned int);
-	return (ft_print_u_after_cast(nbr));
-}
+	baselen = ft_strlen(base);
+	size = 0;
+	while(nbr > baselen)
+	{
+		nbr = nbr / baselen;
+		size++;
+	}
+	return (size);
 
-int	ft_print_u_after_cast(unsigned int nb)
-{
-	
-	if (nb <= 9)
-	{
-		ft_putchar(nb + 48);
-	}
-	if (nb > 9)
-	{
-		ft_print_u_after_cast(nb / 10);
-		ft_print_u_after_cast(nb % 10);
-	}
-	return (ft_get_size_num_u(nb, 10));
 }

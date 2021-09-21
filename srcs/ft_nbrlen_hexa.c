@@ -6,9 +6,11 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 14:57:07 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/19 15:10:29 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/21 02:12:08 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_nbrlen_hexa(int nb)
 {
@@ -16,9 +18,9 @@ int	ft_nbrlen_hexa(int nb)
 
 	i = 0;
 	if (nb < 0)
-	{
-		nb = -nb;
-	}
+		i++;
+	if (nb == 0)
+		return (1);
 	while (nb)
 	{
 		nb /= 16;

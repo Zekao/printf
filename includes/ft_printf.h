@@ -15,9 +15,11 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdarg.h>
+# include <stdint.h>
+# include <stddef.h>
 
 int		ft_printf(const char *str, ...);
-int		ft_get_size_num_u(unsigned long long nb);
+int		ft_get_size_num_u(unsigned long long int nb, int base);
 int		ft_get_size_num(int nb);
 int		ft_print_c(va_list args);
 int		ft_print_d(va_list args);
@@ -37,4 +39,5 @@ void	ft_putstr(const char *str);
 int		ft_strlen(const char *str);
 int		ft_parse(char flag, va_list args);
 int		ft_nbrlen_hexa(int nb);
+int		ft_get_base_len(size_t nbr, char *base);
 #endif
