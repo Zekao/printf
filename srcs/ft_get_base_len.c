@@ -12,18 +12,17 @@
 
 #include "ft_printf.h"
 
-int		ft_get_base_len(size_t nbr, char *base)
+int	ft_get_base_len(size_t nbr, char *base)
 {
-	int	size;
+	int		size;
 	size_t	baselen;
 
 	baselen = ft_strlen(base);
 	size = 0;
-	while(nbr > baselen)
+	while (nbr > baselen)
 	{
 		nbr = nbr / baselen;
 		size++;
 	}
 	return (size);
-
 }

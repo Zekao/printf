@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 19:07:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/21 12:58:59 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/24 13:51:13 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ int	ft_print_u(va_list args)
 
 int	ft_print_u_after_cast(unsigned int nb)
 {
-	
 	if (nb <= 9)
 	{
 		ft_putchar(nb + 48);

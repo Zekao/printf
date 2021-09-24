@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:58:24 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/21 13:24:44 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/09/24 13:49:58 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_get_size_num_u(unsigned long long int nb, int base)
 		return (1);
 	while (nb)
 	{
-		nb /= base;
+		nb = nb / base;
 		i++;
 	}
 	return (i);

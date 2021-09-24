@@ -21,7 +21,6 @@ int	ft_get_size_num(int nb)
 	{
 		i++;
 		nb = -nb;
-		//i++;
 	}
 	while (nb)
 	{
