@@ -4,3 +4,4 @@ venv
 *.o
 test
 test/printf.h
+test.c

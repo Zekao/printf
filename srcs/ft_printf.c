@@ -6,7 +6,7 @@
 /*   By: emaugale <emaugale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:57:18 by emaugale          #+#    #+#             */
-/*   Updated: 2021/09/21 00:26:34 by emaugale         ###   ########.fr       */
+/*   Updated: 2021/10/24 14:14:22 by emaugale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,20 +45,22 @@ int	ft_parse(char flag, va_list args)
 	res = 0;
 	if (flag == 'c')
 		res = ft_print_c(args);
-	if (flag == 's')
+	else if (flag == 's')
 		res = ft_print_s(args);
-	if (flag == 'p')
+	else if (flag == 'p')
 		res = ft_print_p(args);
-	if (flag == 'd' || flag == 'i')
+	else if (flag == 'd' || flag == 'i')
 		res = ft_print_d(args);
-	if (flag == 'u')
+	else if (flag == 'u')
 		res = ft_print_u(args);
-	if (flag == 'x')
+	else if (flag == 'x')
 		res = ft_print_x(args);
-	if (flag == 'X')
+	else if (flag == 'X')
 		res = ft_print_upper_x(args);
-	if (flag == '%')
+	else if (flag == '%')
 		res = ft_print_percent();
+	else
+		res = -1;
 	va_end(args);
 	return (res);
 }
