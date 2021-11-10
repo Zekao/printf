@@ -14,9 +14,9 @@
 
 int	ft_print_p(va_list args)
 {
-	uint64_t	nbr;
+	size_t	nbr;
 
-	nbr = va_arg(args, uint64_t);
+	nbr = va_arg(args, size_t);
 	if (nbr == 0)
 	{
 		ft_putstr("(nil)");

@@ -2,6 +2,6 @@ venv
 *.json
 *.a
 *.o
-test
+*test
 test/printf.h
 test.c
