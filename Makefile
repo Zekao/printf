@@ -94,4 +94,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re libftprintf.a 
+.PHONY: all clean fclean re 
