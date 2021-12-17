@@ -1,4 +1,6 @@
 # printf
+Project note : [![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/emaugale/ft_printf)](https://github.com/JaeSeoKim/badge42)
+
 Une librairie qui contient ft_printf, une fonction qui marche comme le vrai printf
 - Le prototype de ft_printf devra être int ft_printf(const char *, ...); 
 - Vous devez recoder la fonction printf de la libc
